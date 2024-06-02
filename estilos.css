@@ -10,11 +10,14 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #f0f0f0; /* Fondo de color para contraste */
 }
 
 .contenedor {
-    background-size: cover;
     background-image: url('yojaskdsa.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 90vw;
     height: 80vh;
     text-align: center;
