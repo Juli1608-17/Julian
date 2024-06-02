@@ -1,39 +1,89 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
-.contenedor{
-    background-size: contain;
-    background-image: url(yojaskdsa.jpeg);
-    width: 150vh;
-    height: 120vh;
+
+.contenedor {
+    background-size: cover;
+    background-image: url('yojaskdsa.jpeg');
+    width: 90vw;
+    height: 80vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-p{
-    color:  #000;
-    font-size: 50px;
-    padding: 15%;
+p {
+    color: #000;
+    font-size: 5vw;
+    padding: 10%;
 }
 
-button{
-    font-size: xx-large;
-    padding: 0.75em;
+button {
+    font-size: 2vw;
+    padding: 1em;
 }
 
-#yesBtn{
-    transform: translate(-100%,0);
+#yesBtn {
+    transform: translate(-50%, 0);
 }
 
-#noBtn{
+#noBtn {
     position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
+.gato {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
 
-.gato{
-    margin-left: 300px;
-    width: 400px;
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95vw;
+        height: 70vh;
+    }
+
+    p {
+        font-size: 6vw;
+        padding: 8%;
+    }
+
+    button {
+        font-size: 3vw;
+        padding: 1em;
+    }
+
+    .gato {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 8vw;
+        padding: 5%;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 0.75em;
+    }
+
+    .gato {
+        width: 80vw;
+    }
 }
