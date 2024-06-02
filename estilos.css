@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor{
+    background-size: contain;
+    background-image: url(yojaskdsa.jpeg);
+    width: 150vh;
+    height: 120vh;
+    text-align: center;
+}
+
+p{
+    color:  #000;
+    font-size: 50px;
+    padding: 15%;
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+
+
+.gato{
+    margin-left: 300px;
+    width: 400px;
+}
